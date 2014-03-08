@@ -6,7 +6,7 @@
 
 .device-display {  
     position: fixed;
-    top: 5px;
+    bottom: 5px;
     padding: 3px;
     right: 0;
     color: #000;
@@ -51,11 +51,10 @@ FFE5B7
 /* custom theme */
 
 header {
-    min-height:170px;
-    margin-bottom:5px;
+    min-height:135px;
     background-color: #6E8FB2;
     color: #FFE5B7;
-    padding-top: 20px;
+    padding-top: 16px;
 }
 
 
@@ -96,36 +95,6 @@ h3.highlight  {
     padding-top:13px;
     padding-bottom:14px;
     border-bottom:2px solid #ff3333;
-}
-
-.navbar {
-    background-color:#ff3333;
-    color:#ffffff;
-    border:0;
-    border-radius:0;
-}
-.navbar-nav > li > a {
-    color:#fff;
-    padding-left:20px;
-    padding-right:20px;
-    border-left:1px solid #e8e8e8;
-}
-.navbar-nav > li:last-child > a {
-    border-right:1px solid #e8e8e8;
-}
-.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color:transparent;
-}
-.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
-    color: #555555;
-    background-color:transparent;
-    opacity:.9;
-}
-
-.nav .open > a {
-    border-color:#777777;
-    border-width:0;
 }
 
 .accordion-group {
@@ -263,7 +232,7 @@ h3.highlight  {
 }
 
 
-.footer { background-color: #6E8FB2; color: #FFE5B7;}
+footer { background-color: #6E8FB2; color: #FFE5B7; bottom: 0px;}
 hr.clear {
   background: none;
   border: 0;

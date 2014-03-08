@@ -38,24 +38,12 @@
     
     <!-- HTML code from Bootply.com editor -->
     
-    <body  >
-
-      <ul class="link-display">
-        <li><a href="index.html" >home</a></li>
-        <li> <a href="category.html" >category</a></li>
-        <li><a href="product.html" >product</a></li>
-        <li><a href="cart.html" >cart</a></li>
-        <li><a href="sign-up.html" >sign-up</a></li>
-      </ul>
-      <span class="device-display visible-xs">visible-xs</span>
-      <span class="device-display visible-sm">visible-sm</span>
-      <span class="device-display visible-md">visible-md</span>
-      <span class="device-display visible-lg">visible-lg</span>
-
-        
-        <!-- Begin Navbar -->
-
-
+ <body>
+      
+      <span class="device-display visible-xs">cellphones</span>
+      <span class="device-display visible-sm">tablets</span>
+      <span class="device-display visible-md">computers</span>
+      <span class="device-display visible-lg">tvs</span>
 
 <header class="masthead">
   <div class="container">
@@ -63,7 +51,7 @@
       <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
         <h1>
           <a href="index.html" title="scroll down for your viewing pleasure">My E-commerce</a>
-          <p class="lead hidden-sm">A simpe and responsive e-commerce</p></h1>
+          <p class="lead hidden-sm hidden-md">A simpe and responsive e-commerce</p></h1>
       </div>
       <div class="col-lg-8 col-md-9 col-sm-9 hidden-xs pull-right">
           <a href="#" class="thumbnail">
@@ -72,28 +60,45 @@
       </div>
     </div>
   </div>
-  <hr class="separator"/>
-  <div class="container menu">
-    <div class="row">
-      <ul class="list-inline col-lg-9 col-md-9 col-sm-8 col-xs-12">
-        <li class="list-item col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="#">Menu 1</a></li>
-        <li class="list-item col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="#">Menu 1</a></li>
-        <li class="list-item col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="#">Menu 1</a></li>
-        <li class="list-item col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="#">Menu 1</a></li>
-      </ul> 
-
-      <hr class="separator visible-xs" />
-      <hr class="separator visible-xs" />
-      <hr class="separator visible-xs" />
-      <hr class="separator visible-xs" />
-
-      <ul class="list-inline col-lg-3 col-md-3 col-sm-4 col-xs-8 text-right">
-        <li class="list-item col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-user"></span> Sign in</a></li>
-        <li class="list-item col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#"  class="btn btn-info btn-xs"><span class="glyphicon glyphicon-asterisk"></span> Sign up</a></li>
-      </ul>
-    </div> 
-  </div>
 </header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign in</a></li>
+            <li class="active"><a href="sign-up.html"><span class="glyphicon glyphicon-asterisk"></span> Sign up</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div><!-- /navbar -->
+
+
 
 
 <!-- Begin Body -->
@@ -147,37 +152,16 @@
             </div> 
     </div>
 </div><!-- /container -->
-<div class="footer col-lg-12  navbar-fixed-bottom">
-  <p class="text-center">My E-commerce 2014 </p>
-</div>
 
 
-
-        
-        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-
-        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-
-
-
-        
-        <!-- JavaScript jQuery code from Bootply.com editor -->
-        
-        <script type='text/javascript'>
-        
-        $(document).ready(function() {
-        
-            $('#sidebar').affix({
-      offset: {
-        top: 240
-      }
-}); 
-        
-        });
-        
-        </script>
-        
-    </body>
+    <footer>
+      <div class="container">
+        <p class="text-center">My E-commerce 2014 </p>
+      </div>
+    </footer>
+    <!-- ~le scripts~ -->
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- ~le scripts~ -->
+  </body>
 </html>
