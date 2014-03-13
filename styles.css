@@ -1,9 +1,5 @@
-        /* bootstrap 3 helpers */
 
-.navbar-form input, .form-inline input {
-    width:auto;
-}
-
+/* Debug options */
 .device-display {  
     position: fixed;
     bottom: 5px;
@@ -15,224 +11,143 @@
     border: solid 1px #000;
 }
 
-.link-display {  
-    position: fixed;
-    top: 5px;
-    padding: 3px;
-    left: 0;
-    color: #000;
-    background-color: #FFF;
-    z-index: 999999999;
-    border: solid 1px #000;
-}
-
-
-/* end */
-
-/*
-Colors:;
-https://kuler.adobe.com/create/color-wheel/?base=2&rule=Complementary&selected=4&name=My%20Kuler%20Theme&mode=rgb&rgbvalues=0.4314835850619201,0.5591423100235007,0.7,0.8164051215170287,0.9036902437395087,1,0.7164051215170287,0.8512324861722549,1,0.7,0.5769259005430434,0.36148358506192,1,0.8968936726856184,0.7164051215170287&swatchOrder=0,1,2,3,4
-
-6E8FB2
-
-D0E6FF
-
-B7D9FF
-
-B2935C
-
-FFE5B7
-
-*/
-
-
-
-
-/* custom theme */
-
-header {
-    min-height:135px;
-    background-color: #6E8FB2;
-    color: #FFE5B7;
-    padding-top: 16px;
-}
-
-
-.affix,.affix-top {
-   position:static;
-}
-
-/* theme */
-
+/* Html */
 body {
-  color:#AAAAAA;
-  background-color:#eee;
-  font-family: 'Raleway', sans-serif;
-}
-h1,h2,h3,h4,h5,h6 {
-  color: #B2935C;
+    background-color: #f6f5f2;
+    color: #777;
+    font-family: 'Raleway', sans-serif;
 }
 a{
-    color:#6E8FB2;
+    color: #777;
     text-decoration:none;
 }
 a:hover {
-    color:#B2935C;
+    color: #000;
     text-decoration:none;
 }
-
-.highlight-bk {
-    background-color:#ff3333;
-    padding:1px;
-    width:100%;
+/* Header */
+.masthead {
+    min-height:135px;
+    background-color: #F6C003;
+    color: #777;
+    padding-top: 16px;
 }
-
-.highlight {
-    color:#ff3333;
-}
-  
-h3.highlight  {
-    padding-top:13px;
-    padding-bottom:14px;
-    border-bottom:2px solid #ff3333;
-}
-
-.accordion-group {
-    border-width:0;
-}
-
-.dropdown-menu {
-    min-width: 250px;
-}
-
-.accordion-heading .accordion-toggle, .accordion-inner, .nav-stacked li > a {
-    padding-left:1px;
-}
-
-.caret {
-    color:#fff;
-}
-
-.navbar-toggle {
-    color:#fff;
-    border-width:0;
-}
-  
-.navbar-toggle:hover {
-    background-color:#fff;
-}
-
-.panel {
-    /* padding-left:27px;
-    padding-right:27px; */
-  /*  padding-left: none;
-    padding-right: none;*/
-}
-
-.masthead a,.masthead h1, .masthead h2, .masthead h3,.masthead h4, .masthead h5, .masthead h6 {
-  color: #FAFAFA;
+.masthead a {
+  color: #000;
 }
 .masthead a:hover{
-  color: #AAAAAA;
+  color: #777;
 }
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Navbar */
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-color: #F6C003;
 }
 
-.panel-red{ border-color: #6E8FB2; }
-.panel-red .panel-body{ padding: 5px; }
-.panel-red .panel-body img{ width: 100%; }
-.panel-red .panel-heading {
-  color: #FFFAFA;
-  background-color: #6E8FB2;
-  border-color: #6E8FB2;
-}
-.panel-red .panel-footer {
-  color: #FFFAFA;
-  background-color: #6E8FB2;D0E6FF
-  border-color: #6E8FB2;6E8FB2
-}
-
+/* Lists */
 .list-group li ul{
    list-style-type: none;
    text-indent: 1.5em;
 }
 
-
-
-.product{
-  /*overflow: visible;
-  height: 350px;*/
+/* Pagination */
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #000;
+    cursor: default;
+    background-color: #F6C003;
+    border-color: #F6C003;
+}
+.pagination>li>a:hover{
+    background-color: #F6C003;
+    border-color: #F6C003; 
+    color: #000;
 }
 
-.product .price{
+/* Buttons */
+.btn-yellow{
+    color: #000;
+    background-color: #F6C003;
+    border-color: #F6C003;
+}
+.btn-yellow:hover{
+    color: #F6C003;
+    background-color: #777;
+    border-color: #777;
+
+}
+
+/* Thumnails */
+a.thumbnail {
+    border-color: #F6C003;  
+}
+a.thumbnail:hover, a.thumbnail:focus {
+border-color: #F6C003;
+}
+
+/* Table */
+.table thead>tr>th,
+.table tbody>tr>th,
+.table tfoot>tr>th,
+.table thead>tr>td,
+.table tbody>tr>td,
+.table tfoot>tr>td  {
+  vertical-align: middle;
+}
+
+/* Panel */
+.panel{
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Price */
+.price{
+  font-weight: 600;
   line-height: 30px;
   font-size: larger;  
-  color: #B7D9FF;
+  color: #000;
 }
-.price .price-old{
+.price-old{
   font-size: 14px;
   font-weight: 100;
   text-decoration: line-through;
 }
-
-.price {
-  font-weight: 600;
-}
-.product .price-new{
+.price-new{
   display: block;
   margin-top: -15px;
-  color: #B7D9FF;
-}
-
-.product .title a, .product .title a:hover {
-  color: #FAFAFA;
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-
-
-.product-detail{
-  padding-top: 10px;
+  color: #000;
 }
 .product-detail .price{
   line-height: 30px;
-  font-size: larger;  
   font-size: 22px;
-  color: #666;
-}
-.product-detail .price-old{
-  color: #AFAFAF;
-  font-size: 14px;
-  text-decoration: line-through;
-}
-.product-detail .price-new{
-  display: block;
-  margin-top: -15px;
-  font-size: 22px;
-  color: #666;
 }
 
-.panel{ border: solid 0.5px #ccc;  padding-bottom: 10px;}
-.bg-white { background-color: white; }
-
-.two-lines{
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-box-orient: vertical;
-   -webkit-line-clamp: 2; /* number of lines to show */
-   line-height: 30;        /* fallback */
-   max-height: 15*2;       /* fallback */
+/* Footer */
+footer { 
+  background-color: #F6C003;
+  color: #000;
+  bottom: 0;
+  vertical-align: middle;
+}
+footer p{
+    line-height: 42px;
 }
 
+/* Helpers */
 
-footer { background-color: #6E8FB2; color: #FFE5B7; bottom: 0px;}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+/*
 hr.clear {
   background: none;
   border: 0;
@@ -246,7 +161,7 @@ hr.clear {
   visibility: hidden;
   width: 0;
   height: 0;
-}
+}*/
 hr.separator {
   background: none;
   border: 0;
@@ -254,30 +169,10 @@ hr.separator {
   display: block;
   float: none;
   font-size: 0;
-  margin:5px 0;
+  margin:10px 0;
   padding: 0;
   overflow: hidden;
   visibility: hidden;
   width: 0;
   height: 0;
 }
-
-.clear:before,
-.clear:after {
-    content: " ";
-    display: table;
-}
-
-.clear:after {
-    clear: both;
-}
-
-.right { text-align: right; }
-.left { text-align: left; }
-
-.menu{ 
-    
-}
-.menu .list-item a{ font-style: italic;  font-size: 120%; }
-
-/* end theme */
